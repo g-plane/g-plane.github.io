@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon shortcut" type="image/ico" href="./favicon.png">
+  <title>Pig Fang</title>
+</head>
+<body>
+  <style>
+    @font-face {
+      font-family: ProximaNova;
+      src: url('./ProximaNova.woff');
+    }
+
+    body {
+      display: block;
+      margin: 0;
+      padding: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-attachment: fixed;
+      content: '';
+      background-image: url('./bg.jpg');
+    }
+
+    .main-content {
+      height: 100vh;
+      text-align: center;
+      text-decoration: none;
+      font-family: ProximaNova;
+      background-color: rgba(0, 0, 0, 0.65);
+      color: #B3E5FC;
+    }
+
+    .name {
+      padding-top: 21%;
+      font-size: 49px;
+    }
+
+    .links {
+      margin-top: 15px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .links a {
+      justify-content: center;
+      font-size: 33px;
+      padding-left: 15px;
+      padding-right: 15px;
+      text-decoration: none;
+      color: #B3E5FC;
+      -webkit-transition: 0.6s;
+      -moz-transition: 0.6s;
+      -o-transition: 0.6s;
+      transition: 0.6s;
+    }
+
+    .links a:hover {
+      color: #009688;
+      -webkit-transition: 0.6s;
+      -moz-transition: 0.6s;
+      -o-transition: 0.6s;
+      transition: 0.6s;
+    }
+  </style>
+
+  <div class="main-content">
+    <div class="name">Pig Fang</div>
+    <div class="links">
+      <nav>
+        <a href="https://blog.gplane.win/">Blog</a>
+        <a href="https://github.com/g-plane">GitHub</a>
+        <a href="https://www.zhihu.com/people/gplane">Zhihu</a>
+        <a href="https://twitter.com/g3plane">Twitter</a>
+      </nav>
+    </div>
+  </div>
+</body>
+</html>
