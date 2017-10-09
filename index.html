@@ -53,11 +53,11 @@
       align-items: center;
       display: flex;
       justify-content: center;
-      flex-direction: column;
+      -ms-flex-direction: row;
+      flex-direction: row;
     }
 
     .links a {
-      justify-content: center;
       font-size: 33px;
       padding-left: 15px;
       padding-right: 15px;
@@ -76,18 +76,27 @@
       -o-transition: 0.6s;
       transition: 0.6s;
     }
+
+    @media screen and (max-width: 500px) {
+      .links {
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+
+      .links a {
+        font-size: 29px;
+      }
+    }
   </style>
 
   <div class="main-content">
     <div class="name">Pig Fang</div>
     <div class="links">
-      <nav>
-        <a href="https://blog.gplane.win/">Blog</a>
-        <a href="https://github.com/g-plane">GitHub</a>
-        <a href="http://music.163.com/#/user/home?id=62126971">Netease Music</a>
-        <a href="https://www.zhihu.com/people/gplane">Zhihu</a>
-        <a href="https://twitter.com/g3plane">Twitter</a>
-      </nav>
+      <a href="https://blog.gplane.win/">Blog</a>
+      <a href="https://github.com/g-plane">GitHub</a>
+      <a href="http://music.163.com/#/user/home?id=62126971">Netease Music</a>
+      <a href="https://www.zhihu.com/people/gplane">Zhihu</a>
+      <a href="https://twitter.com/g3plane">Twitter</a>
     </div>
   </div>
 </body>
