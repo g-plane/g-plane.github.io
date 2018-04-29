@@ -3,6 +3,9 @@ node_js: stable
 
 script: yarn build
 
+branches:
+  only: source
+
 deploy:
   provider: pages
   local-dir: dist
