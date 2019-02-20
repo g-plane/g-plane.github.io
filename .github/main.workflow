@@ -14,7 +14,7 @@ action "Install dependencies" {
   args = "i"
 }
 
-action "GitHub Action for npm" {
+action "Build the website" {
   uses = "actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680"
   needs = ["Install dependencies"]
   args = "run build"
@@ -25,6 +25,6 @@ action "GitHub Pages Deploy" {
   env = {
     BUILD_DIR = "dist/"
   }
-  needs = ["Target the correct branch"]
+  needs = ["Build the website"]
   secrets = ["GH_PAT"]
 }
